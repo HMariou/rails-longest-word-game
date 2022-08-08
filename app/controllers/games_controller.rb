@@ -1,6 +1,7 @@
 class GamesController < ApplicationController
   def new
-    @letter = Array('A'..'Z') + Array('a'..'z')
+    @letter = Array('A'..'Z')
+    @letter.sample
   end
 
   def score
